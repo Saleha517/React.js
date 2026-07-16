@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const person = {
+            name:"ahmed",
+            Age : 29,
+                                          
+            alive :true,
+            cars:["bmw","mercedes","2000cc","audi",{
+                engine:"2000cc",
+                color: " black and blue ",
+            Address:{
+                houseno:"w-232",
+                city:"karachi",
+                country:"pakistan",
+            }}]     
+        }
+        for(key in person){
+            console.log(key , person[key])
+        }
+
+        console.log(person.Age)
+        console.log(person.cars[2])
+        console.log(person.Address.city)
+        console.log(person.cars[4].color)
+        console.log(Object.keys(person))
+        console.log(Object.values(person))
+        console.log(Object.entries(person))
+    </script>
+</body>
+</html>
